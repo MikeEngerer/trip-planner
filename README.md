@@ -1,45 +1,66 @@
-React Boilerplate
-=====================
+## TRIPSTER
 
-A minimal and light dev environment for ReactJS.
+Collaborative trip planning application built with NodeJs, Express, Socket.io, React, and PostgresSQL. 
+
+You and your friends work together in a real-time environment to select flights, hotels, events and attractions specific to your trip details.
+
+Data is fetched from a variety of travel APIs, each queried using your destination and travel dates.
 
 ### Usage
 
-Clone the boilerplate and create your own git repo.
-
+1. ```git clone <new folder>```
+2. In both root and server folders: ```npm i``` 
+3. Within psql environment: ```create database <db name> owner <user>```
+4. From within server folder: ```knex migrate:latest```
+5. Create a .env in the server folder and add the following:
 ```
-git clone git@github.com:lighthouse-labs/react-simple-boilerplate.git
-cd react-simple-boilerplate
-git remote rm origin
-git remote add origin [YOUR NEW REPOSITORY]
-# Manually update your package.json file
+DB_HOST=localhost
+DB_USER=<user>
+DB_PASS=<pass>
+DB_NAME=<db name>
+DB_SSL=true if heroku
+DB_PORT=5432
+EVENTBRITE_API_TOKEN=<your key>
+GOOGLE_PLACE_KEY=<your key>
+GEOCODE_KEY=<your key>
 ```
-
-Install the dependencies and start the server.
-
+6. Create a .env in the root folder and add the following:
 ```
-npm install
-npm start
-open http://localhost:3000
+GOOGLE_MAPS_KEY=<your key>
 ```
-
-### Static Files
-
-You can store static files like images, fonts, etc in the `build` folder.
-
-For example, if you copy a file called my_image.png into the build folder you can access it using `http://localhost:3000/build/my_image.png`.
-
-### Linting
-
-This boilerplate project includes React ESLint configuration.
-
-```
-npm run lint
-```
+7. In both root and server folders: ```npm start```
+8. ```xdg-open http://localhost:3000```
 
 ### Dependencies
 
-* React
-* Webpack
-* [babel-loader](https://github.com/babel/babel-loader)
-* [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+Server:
+* body-parser
+* cookie-session
+* cors
+* dotenv
+* express
+* knex
+* knex-logger
+* moment
+* nodemon
+* path
+* pg
+* request
+* socket.io
+* uuid
+
+Client:
+* axios
+* dotenv
+* dotenv-webpack
+* google-maps-react
+* react
+* react-dom
+* react-loading
+* react-router-dom
+* react-router-transition
+* react-ui-cards
+* scripts
+* socket-client
+* socket.io
+* universal-cookie
