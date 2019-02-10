@@ -24,6 +24,7 @@ EVENTBRITE_API_TOKEN=<your key>
 GOOGLE_PLACE_KEY=<your key>
 GEOCODE_KEY=<your key>
 ```
+* GEOCODE_KEY corresponds to [OpenCage Geocoder](https://opencagedata.com/)
 6. Create a .env in the root folder and add the following:
 ```
 GOOGLE_MAPS_KEY=<your key>
