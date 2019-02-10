@@ -10,7 +10,7 @@ Data is fetched from a variety of travel APIs, each queried using your destinati
 
 1. ```git clone <new folder>```
 2. In both root and server folders: ```npm i``` 
-3. Within psql environment: ```create database <db name> owner <user>```
+3. Within psql environment: ```create database <db name> owner <user>;```
 4. Create a .env in the server folder and add the following:
 ```
 DB_HOST=localhost
