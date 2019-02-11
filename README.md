@@ -18,8 +18,7 @@ Data is fetched from a variety of travel APIs, each queried using your destinati
 
 1. ```git clone <new folder>```
 2. In both root and server folders: ```npm i``` 
-3. Within psql environment: ```create database <db name> owner <user>;```
-4. Create a .env in the server folder and add the following:
+3. Create a .env in the server folder and add the following:
 ```
 DB_HOST=localhost
 DB_USER=<user>
@@ -32,10 +31,11 @@ GOOGLE_PLACE_KEY=<your key>
 GEOCODE_KEY=<your key>
 ```
 * GEOCODE_KEY corresponds to [OpenCage Geocoder](https://opencagedata.com/)
-5. Create a .env in the root folder and add the following:
+4. Create a .env in the root folder and add the following:
 ```
 GOOGLE_MAPS_KEY=<your key>
 ```
+5. Within psql environment: ```create database <db name> owner <user>;```
 6. From within server folder: ```knex migrate:latest```
 7. In both root and server folders: ```npm start```
 8. ```xdg-open http://localhost:3000```
