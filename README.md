@@ -36,7 +36,7 @@ GEOCODE_KEY=<your key>
 GOOGLE_MAPS_KEY=<your key>
 ```
 5. Within psql environment: ```create database <db name> owner <user>;```
-6. From within server folder: ```knex migrate:latest```
+6. Within server folder: ```knex migrate:latest```
 7. In both root and server folders: ```npm start```
 8. ```xdg-open http://localhost:3000```
 
