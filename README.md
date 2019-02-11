@@ -72,8 +72,4 @@ Client:
 * scripts
 * socket-client
 * socket.io
-<<<<<<< HEAD
 * universal-cookie
-=======
-* universal-cookie
->>>>>>> 32e315f1be7d61d752b21f281024e11d0d104ef4
