@@ -6,14 +6,6 @@ You and your friends work together in a real-time environment to select flights,
 
 Data is fetched from a variety of travel APIs, each queried using your destination and travel dates.
 
-### Screenshots
-
-![image](./src/img/login.png)
-![image](./src/img/selection.png)
-![image](./src/img/invite.png)
-![image](./src/img/whiteboard.png)
-![image](./src/img/summary.png)
-
 ### Usage
 
 1. ```git clone <new folder>```
@@ -30,15 +22,28 @@ EVENTBRITE_API_TOKEN=<your key>
 GOOGLE_PLACE_KEY=<your key>
 GEOCODE_KEY=<your key>
 ```
-* GEOCODE_KEY corresponds to [OpenCage Geocoder](https://opencagedata.com/)
 4. Create a .env in the root folder and add the following:
 ```
 GOOGLE_MAPS_KEY=<your key>
 ```
+* Find API keys here:
+  GEOCODE_KEY: [OpenCage Geocoder](https://opencagedata.com/)
+  GOOGLE_PLACE_KEY: [Google Maps Platform](https://cloud.google.com/maps-platform/)
+  GOOGLE_MAPS_KEY: [Google Maps Platform](https://cloud.google.com/maps-platform/)
+  EVENTBRITE_API_TOKEN: [Eventbrite](https://www.eventbrite.com/platform/)
+  
 5. Within psql environment: ```create database <db name> owner <user>;```
 6. Within server folder: ```knex migrate:latest```
 7. In both root and server folders: ```npm start```
 8. ```xdg-open http://localhost:3000```
+
+### Screenshots
+
+![image](./src/img/login.png)
+![image](./src/img/selection.png)
+![image](./src/img/invite.png)
+![image](./src/img/whiteboard.png)
+![image](./src/img/summary.png)
 
 ### Dependencies
 
