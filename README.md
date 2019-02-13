@@ -26,7 +26,7 @@ GEOCODE_KEY=<your key>
 ```
 GOOGLE_MAPS_KEY=<your key>
 ```
-* Find API keys here:
+Find API keys here:
 *  GEOCODE_KEY: [OpenCage Geocoder](https://opencagedata.com/)
 *  GOOGLE_PLACE_KEY: [Google Maps Platform](https://cloud.google.com/maps-platform/)
 *  GOOGLE_MAPS_KEY: [Google Maps Platform](https://cloud.google.com/maps-platform/)
