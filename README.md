@@ -4,7 +4,7 @@ Collaborative trip planning application built with NodeJs, Express, Socket.io, R
 
 You and your friends work together in a real-time environment to select flights, hotels, events and attractions specific to your trip details.
 
-Data is fetched from a variety of travel APIs, each queried using your destination and travel dates.
+Data is fetched from a variety of third-party APIs, each queried using your destination and travel dates.
 
 ### Usage
 
